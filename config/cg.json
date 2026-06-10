@@ -1,0 +1,31 @@
+{
+  "name": "Chaudhary Group (CG)",
+  "slug": "cg",
+  "url": "https://chaudharygroup.com",
+
+  "discovery": {
+    "__": "Where the company/sector pages are — explicit, no LLM guessing.",
+    "nav_section": "Companies",
+    "follow_read_more": true,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "__": "Deterministic guards applied AFTER the LLM extracts each page.",
+
+    "name_must_be_heading": false,
+    "__name_must_be_heading": "OPTIONAL strict gate: keep only names that are page headings. Off by default — it drops real brands that live in cards/text (Wai Wai, Rio, CG Electronics). The generic prompt already blocks hallucination, so we don't need this gate; enable only for very noisy sites.",
+
+    "division_from": "page",
+    "__division_from": "Each sector page IS the division (page provenance). Options: page | section.",
+
+    "nest_brand_under_company_only": true,
+    "__nest": "A brand may nest under a subsidiary; never brand->brand or sibling->sibling.",
+
+    "drop_if_contains": [
+      "region", "main unit", "head office", "central region",
+      "western region", "eastern region"
+    ],
+    "min_name_length": 3
+  }
+}
