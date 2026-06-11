@@ -19,9 +19,15 @@ _MD_LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^\s)]+)\)")
 # ── 1. discovery (config-driven, no LLM) ──────────────────────────────────────
 
 def discover_pages(config, cache):
-    """Page URLs from the configured nav section's children (+ read-more)."""
+    """Page URLs to scrape. Either an explicit list (sites whose nav links don't
+    work — WordPress ?page_id=, JS nav) or the children of a named nav section."""
     disc = config.get("discovery", {})
     home = domain_of(config["url"])
+
+    if disc.get("pages"):
+        return [{"url": u, "section": u.rstrip("/").split("/")[-1].replace("-", " ").title()}
+                for u in disc["pages"]]
+
     nav = (scraper.resource(config["url"], cache).get("data") or {}).get("nav") or []
 
     pages, seen = [], set()

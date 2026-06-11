@@ -1,0 +1,20 @@
+{
+  "name": "KL Dugar Group",
+  "slug": "kldugar",
+  "url": "https://www.kldugargroup.com",
+
+  "discovery": {
+    "__": "The 'Business' nav section lists the companies (per-company pages). Product Catalogue / Product Range / FAQs children are dropped automatically.",
+    "nav_section": "Business",
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

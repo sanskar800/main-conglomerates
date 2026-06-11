@@ -1,0 +1,31 @@
+{
+  "name": "IME Group",
+  "slug": "ime",
+  "url": "https://imegroup.com.np",
+
+  "discovery": {
+    "__": "IME's nav uses WordPress ?page_id= URLs the scraper can't fetch, so the sector pages are listed explicitly. Each /business/<sector>/ page IS a division.",
+    "pages": [
+      "https://imegroup.com.np/business/finance/",
+      "https://imegroup.com.np/business/tourism-hospitality/",
+      "https://imegroup.com.np/business/automobiles/",
+      "https://imegroup.com.np/business/infotainment/",
+      "https://imegroup.com.np/business/insurance/",
+      "https://imegroup.com.np/business/energy/",
+      "https://imegroup.com.np/business/technology/",
+      "https://imegroup.com.np/business/trading-retail/",
+      "https://imegroup.com.np/business/manufacturing/",
+      "https://imegroup.com.np/business/education/"
+    ],
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}
