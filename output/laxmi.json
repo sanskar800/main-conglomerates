@@ -1,0 +1,300 @@
+{
+  "group": "Laxmi Group",
+  "slug": "laxmi",
+  "url": "https://laxmigroup.com.np",
+  "company_count": 26,
+  "llm_cost": {
+    "calls": 7,
+    "input_tokens": 5291,
+    "output_tokens": 3022,
+    "cost_usd": 0.0091
+  },
+  "companies": [
+    {
+      "name": "Sujal Foods",
+      "division": "Confectionery",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "food",
+      "description": "Sujal Food, a biggest confectionery manufacturing and marketing company in Nepal, is the flagship subsidiary company of Laxmi Group. Having its fold over 5 leading brands in different product categories, company holds more than 60% market share from its entire portfolio. Sujal Food has a humble mission to make premium confectioneries.",
+      "image": "http://laxmigroup.com.np/assets/kcfinder/upload/images/Untitled-1.jpg",
+      "website": "http://sujal.com.np",
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/69"
+    },
+    {
+      "name": "Chocofun",
+      "division": "Confectionery",
+      "parent": "Sujal Foods",
+      "relationship": "brand",
+      "sector": "food",
+      "description": "Its flagship brand “Chocofun” has been metaphor to chocolate since last ten years and its iconic image has been affluent.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/69"
+    },
+    {
+      "name": "Sujal Gum",
+      "division": "Confectionery",
+      "parent": "Sujal Foods",
+      "relationship": "brand",
+      "sector": "food",
+      "description": "“Sujal gum” is the first stick gum of the country and has been tipping gummy wave through out the country.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/69"
+    },
+    {
+      "name": "Smart Lollypop",
+      "division": "Confectionery",
+      "parent": "Sujal Foods",
+      "relationship": "brand",
+      "sector": "food",
+      "description": null,
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/69"
+    },
+    {
+      "name": "Milkfalls",
+      "division": "Confectionery",
+      "parent": "Sujal Foods",
+      "relationship": "brand",
+      "sector": "food",
+      "description": null,
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/69"
+    },
+    {
+      "name": "Love Birds",
+      "division": "Confectionery",
+      "parent": "Sujal Foods",
+      "relationship": "brand",
+      "sector": "food",
+      "description": null,
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/69"
+    },
+    {
+      "name": "Waffy",
+      "division": "Confectionery",
+      "parent": "Sujal Foods",
+      "relationship": "brand",
+      "sector": "food",
+      "description": null,
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/69"
+    },
+    {
+      "name": "Sujal Plastics Pvt. Ltd",
+      "division": "Plastic",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "packaging",
+      "description": "Sujal Plastics Pvt. Ltd offers PET soutions for major food and beverage industry in Nepal. It offers semi-finished product as preforms which can be transformed into bottles and jars through the blowing process as well as complete packaging solutions,i.e. bottle and jars. It also offers caps and handles which can be used as packaging closure.",
+      "image": "http://www.sujalplastics.com/assets/img/allrange.png",
+      "website": "http://www.sujalplastics.com",
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/70"
+    },
+    {
+      "name": "Jaya Packaging Pvt. Ltd.",
+      "division": "Plastic",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "packaging",
+      "description": "Due to the explosion of the advertising in Nepalese society in early eighties, consumer became very excited about the product’s packaging. Grabbing this opportunity, group established a new printing and packaging unit called Jaya Packaging Pvt. ltd. in 1990. It uses latest Rotogravure printing technology to print on silver foil and plastic packaging for the confectionery unit.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/70"
+    },
+    {
+      "name": "Jaya Polythene Pvt. Ltd",
+      "division": "Plastic",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "packaging",
+      "description": "Group’s confectionery division used to out-source all the plastics film and plastic sheets to India and other domestic suppliers. For the prompt and quality supply of this kind of material, Jaya Polythene Pvt. ltd was established in 1992. It has its latest technologies from Taiwan and it uses high quality raw materials from Thailand and Malaysia.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/70"
+    },
+    {
+      "name": "Sujal Dairy Pvt. Ltd.",
+      "division": "Dairy",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "food",
+      "description": "Sujal dairy Pvt Ltd, a subsidiary of Laxmi Group is one of the largest milk processing companies with over 10 years of expertise on the dairy industry of Nepal. Sujal dairy debuted into the dairy industry after the successful acquisition of Pokhara Milk supply Scheme (PMSS) in 2005. It marks its presence as a trendsetter in the dairy industry, with the use of new ideas, technologies, production facilities and product developments.",
+      "image": null,
+      "website": "http://www.sujaldairy.com.np",
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/71"
+    },
+    {
+      "name": "Safal",
+      "division": "Dairy",
+      "parent": "Sujal Dairy Pvt. Ltd.",
+      "relationship": "brand",
+      "sector": "food",
+      "description": "The warmth of Safal milk, has touched the heart of customers, even suceeding to be the no.1 brand of Pokhara.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/71"
+    },
+    {
+      "name": "Alpine Dairy Whitener",
+      "division": "Dairy",
+      "parent": "Sujal Dairy Pvt. Ltd.",
+      "relationship": "brand",
+      "sector": "food",
+      "description": "Alpine Dairy Whitener,which can be used for tea and coffee has also gain wide success in the market.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/71"
+    },
+    {
+      "name": "Lovebirds Ice-cream",
+      "division": "Dairy",
+      "parent": "Sujal Dairy Pvt. Ltd.",
+      "relationship": "brand",
+      "sector": "food",
+      "description": "With its focus on learning and identifying new opportunities, it has introduced Lovebirds Ice-cream which prides itself as an innovative ice cream, offering high quality at affordable price.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/67/71"
+    },
+    {
+      "name": "Jaima Laxmi Trading Pvt.Ltd",
+      "division": "Jaima Laxmi Trading Pvt.Ltd",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "This trading unit was initially formed to in- source all the raw materials to the confectionery units. Today this unit independently works not only to serve its sister concern only but also shown its own integrity by trading with other clients as well. Its main focus is in trading of industrial raw materials like: Sugar, Milk powder, liquid glucose, acidulates, flavors, printing inks, Cocoa and coca product, various kinds of plastic granules, Vegetable Fats like: Palm Kernel Oil, Palm Oil.",
+      "image": "http://laxmigroup.com.np/assets/kcfinder/upload/images/trading1.jpg",
+      "website": "http://laxmigroup.com.np#tabsNavigation1",
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/72"
+    },
+    {
+      "name": "L.I Motors Pvt.Ltd",
+      "division": "Automotive",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "automotive",
+      "description": "L.I. Motors is a showroom of Hyundai Motors based in Buddha Chowk, Pokhara.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/73"
+    },
+    {
+      "name": "L.H - Service And Spare Parts",
+      "division": "Automotive",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "automotive",
+      "description": "Laxmi Holdings is an importer of automotive components and spare parts that is used in Hyundai Motors and also imports Lubricants, auto parts.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/73"
+    },
+    {
+      "name": "Laxmi Commercial Vehicle Pvt. Ltd.",
+      "division": "Automotive",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "automotive",
+      "description": "Previously known as Gold Fish International Pvt.Ltd is the authorized distributor of SML ISUZU vehicles in Nepal. SML ISUZU has produced light and medium commercial vehicles for over 34 years. It has been breaking waves in terms of product and production technology; supporting the values that serve customer needs and maintaining a competitive edge in the market.",
+      "image": "http://smlisuzunepal.com/laravel-filemanager/photos/1/line-up.jpg",
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/73"
+    },
+    {
+      "name": "Laxmi Intercontinental Pvt.Ltd",
+      "division": "Automotive",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "automotive",
+      "description": "Laxmi Intercontinental Pvt. Ltd is the authorized dealer of Hyundai Motors since February 2009. After the acquisition of distributorship in 2009, Laxmi Intercontinental started working in the imports and sales of various Hyundai car models.",
+      "image": "http://laxmihyundai.com/assets/frontend/images/sliders/big-2.jpg",
+      "website": "https://www.laxmihyundai.com/",
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/73"
+    },
+    {
+      "name": "Laxmi Premium Motors",
+      "division": "Automotive",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "automotive",
+      "description": "Laxmi Premium Motors is the authorized dealer of BMW Motors since 2020. After the acquisition of distributorship , Laxmi Premium Motors started working in the imports and sales of various BMW car models.",
+      "image": null,
+      "website": "https://bmw-laxmi.com.np/",
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/73"
+    },
+    {
+      "name": "Jaima Intercontinental Pvt.Ltd",
+      "division": "Electronics",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "electronics",
+      "description": "Globalization of technology offers new opportunities for development. Concept of the globalization and continuous improvement and innovation in technology has contributed Nepalese Society to adopt different kinds of leisure, life style and technological products. Observing this kind of trend and seeing better future, Laxmi group has initiated Jaima Intercontinental as its importing and marketing company.",
+      "image": "http://laxmigroup.com.np/assets/kcfinder/upload/images/Screen%20Shot%202018-11-06%20at%2011.52.41%20am.png",
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/74"
+    },
+    {
+      "name": "Lee Mobi Care Pvt.Ltd",
+      "division": "Electronics",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "electronics",
+      "description": "Lee Mobi Care, the National Service Center for Coolpad smartphones and OTTO phones is equipped with latest tools, facilities and experienced technician to offer convenient, efficient and combined technical service for the PDE, LMC is set to deliver its promise to provide customers with top notch services.",
+      "image": "http://laxmigroup.com.np/assets/kcfinder/upload/images/lee%20mobi.jpg",
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/74"
+    },
+    {
+      "name": "Otto",
+      "division": "Electronics",
+      "parent": "Jaima Intercontinental Pvt.Ltd",
+      "relationship": "brand",
+      "sector": "electronics",
+      "description": null,
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/74"
+    },
+    {
+      "name": "Coolpad",
+      "division": "Electronics",
+      "parent": "Jaima Intercontinental Pvt.Ltd",
+      "relationship": "brand",
+      "sector": "electronics",
+      "description": null,
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/68/74"
+    },
+    {
+      "name": "Siddhi Laxmi Steels Pvt. Ltd.",
+      "division": "Siddhi Laxmi Steels",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "With more than 46years of experience in multiple trading and manufacturing industries, Laxmi Group now entered the infrastructure industry business. This ambitious vision inspired by the commitment to provide best quality TMT Rebars to the consumers led to the establishment of Siddhi Laxmi Steels Pvt. Ltd. in 2018.",
+      "image": null,
+      "website": "http://laxmigroup.com.np#tabsNavigation1",
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/85/88"
+    },
+    {
+      "name": "Samriddhi Steels",
+      "division": "Siddhi Laxmi Steels",
+      "parent": "Siddhi Laxmi Steels Pvt. Ltd.",
+      "relationship": "brand",
+      "sector": "other",
+      "description": "Samriddhi Steels, X -Ribbed TMT Rebars. Which Are manufactured with high quality pure prime billets to provide superior steel quality with perfect length and weight ratio for strong and excellent constructions.",
+      "image": null,
+      "website": null,
+      "source_url": "http://laxmigroup.com.np/dashboard/menu/25/85/88"
+    }
+  ]
+}

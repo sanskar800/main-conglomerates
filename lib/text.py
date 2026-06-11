@@ -53,6 +53,21 @@ def headings(markdown):
     return {h for h in out if h}
 
 
+def page_title(markdown):
+    """The first heading on the page (its title) — used as the division when the
+    URL/section is opaque (e.g. Laxmi's '/dashboard/menu/25/68/73' -> page title
+    'Automotive')."""
+    lines = (markdown or "").split("\n")
+    for i, line in enumerate(lines):
+        s = line.strip()
+        m = _HEADING_RE.match(s)
+        if m:
+            return _clean_heading(m.group(1))
+        if i + 1 < len(lines) and re.match(r"^[=-]{3,}$", lines[i + 1].strip()) and s and len(s) < 60:
+            return _clean_heading(s)
+    return ""
+
+
 def _clean_heading(t):
     t = _IMG_RE.sub("", t)
     t = _LINK_RE.sub(r"\1", t)

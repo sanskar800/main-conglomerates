@@ -1,0 +1,28 @@
+{
+  "name": "Laxmi Group",
+  "slug": "laxmi",
+  "url": "https://laxmigroup.com.np",
+
+  "discovery": {
+    "__": "The scraper returns an empty nav for this site (JS). The business pages use opaque /dashboard/menu/<id> URLs, so they're listed explicitly. Division falls back to each page's title (Confectionery, Automotive, ...).",
+    "pages": [
+      "https://laxmigroup.com.np/dashboard/menu/25/67/69",
+      "https://laxmigroup.com.np/dashboard/menu/25/67/70",
+      "https://laxmigroup.com.np/dashboard/menu/25/67/71",
+      "https://laxmigroup.com.np/dashboard/menu/25/68/72",
+      "https://laxmigroup.com.np/dashboard/menu/25/68/73",
+      "https://laxmigroup.com.np/dashboard/menu/25/68/74",
+      "https://laxmigroup.com.np/dashboard/menu/25/85/88"
+    ],
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

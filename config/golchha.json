@@ -1,0 +1,30 @@
+{
+  "name": "Golchha Organisation",
+  "slug": "golchha",
+  "url": "https://golchhagroup.com.np",
+
+  "discovery": {
+    "__": "The 'Business' nav item is a flat link with no children; the sector pages live under /businesses/<sector>/ (in the footer). Listed explicitly. The host is occasionally blocked for /call, so the browser /forward fallback renders them.",
+    "pages": [
+      "https://golchhagroup.com.np/businesses/automotive",
+      "https://golchhagroup.com.np/businesses/electronics",
+      "https://golchhagroup.com.np/businesses/fintech",
+      "https://golchhagroup.com.np/businesses/education",
+      "https://golchhagroup.com.np/businesses/life-insurance",
+      "https://golchhagroup.com.np/businesses/bioscience",
+      "https://golchhagroup.com.np/businesses/alternative-energy",
+      "https://golchhagroup.com.np/businesses/reinsurance",
+      "https://golchhagroup.com.np/businesses/entertainment"
+    ],
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

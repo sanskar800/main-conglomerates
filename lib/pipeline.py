@@ -8,7 +8,7 @@ import re
 from collections import defaultdict
 
 from . import scraper
-from .text import (domain_of, nkey, fuzzy_key, clean_division_name, headings)
+from .text import (domain_of, nkey, fuzzy_key, clean_division_name, headings, page_title)
 
 SUBPAGE_ANCHORS = ("read more", "learn more", "view more", "explore", "details", "know more")
 # Nav children to skip — product CATALOGUE pages and about/contact, NOT companies.
@@ -130,11 +130,17 @@ def drop_structural_echoes(companies, struct_keys):
     return out
 
 
-def apply_division(companies, section_of):
-    """Rule division_from=page: a company's division is the page it came from."""
+def apply_division(companies, section_of, title_of):
+    """Rule division_from=page: a company's division is the page it came from.
+    Use the section label if readable; fall back to the page title when the
+    section is an opaque URL slug (numeric / page_id, e.g. Laxmi)."""
     for c in companies:
-        sec = section_of.get(nkey(c.get("source_url")), "")
-        c["division"] = clean_division_name(sec.split("/")[0]) or None
+        k = nkey(c.get("source_url"))
+        sec = (section_of.get(k, "") or "").split("/")[0]
+        div = clean_division_name(sec)
+        if not div or div.isdigit() or "page id" in div.lower() or "page_id" in sec.lower():
+            div = clean_division_name(title_of.get(k, ""))
+        c["division"] = div or None
     return companies
 
 
@@ -198,19 +204,20 @@ def run_group(config, gemini, cache):
             pages_by_url[p["url"]] = p
             section_of[nkey(p["url"])] = sub_section.get(nkey(p["url"]), "")
 
-    companies, heads_by_url = [], {}
+    companies, heads_by_url, title_of = [], {}, {}
     for url, page in pages_by_url.items():
         md = page.get("markdown")
         if page.get("error") or not md:
             continue
         heads_by_url[nkey(url)] = headings(md)
+        title_of[nkey(url)] = page_title(md)
         got = gemini.extract(md, name, section_of.get(nkey(url), ""), url)
         for c in got:
             if isinstance(c, dict):
                 c.setdefault("source_url", url)
         companies.extend(c for c in got if isinstance(c, dict))
 
-    companies = apply_division(companies, section_of)
+    companies = apply_division(companies, section_of, title_of)
 
     before = len(companies)
     if config.get("rules", {}).get("name_must_be_heading"):
