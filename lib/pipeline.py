@@ -11,8 +11,12 @@ from . import scraper
 from .text import (domain_of, nkey, fuzzy_key, clean_division_name, headings)
 
 SUBPAGE_ANCHORS = ("read more", "learn more", "view more", "explore", "details", "know more")
-JUNK_CHILD = ("product", "catalogue", "faq", "about", "contact", "career", "news",
-              "media", "gallery", "vision", "mission", "history", "team", "csr")
+# Nav children to skip — product CATALOGUE pages and about/contact, NOT companies.
+# Match catalogue/range specifically, not the bare word "product" (which also
+# appears in legit company names like "Saurabh Food Products Pvt. Ltd.").
+JUNK_CHILD = ("catalogue", "catalog", "product range", "faq", "about", "contact",
+              "career", "news", "media", "gallery", "vision", "mission", "history",
+              "team", "csr")
 _MD_LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^\s)]+)\)")
 
 
