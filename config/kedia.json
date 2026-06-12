@@ -1,0 +1,21 @@
+{
+  "name": "Kedia Organisation",
+  "slug": "kedia",
+  "url": "https://www.kediaorganisation.com",
+
+  "discovery": {
+    "__": "Companies are listed on the homepage as a grid under Manufacturing/Financial/Trading verticals (the nav 'Our Brands' items have no URLs). Scrape the homepage; the external 'Investors' nav children are kept as name-only entities.",
+    "pages": ["https://www.kediaorganisation.com"],
+    "nav_section": ["Investors"],
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

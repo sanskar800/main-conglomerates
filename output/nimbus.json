@@ -1,0 +1,135 @@
+{
+  "group": "Nimbus Group",
+  "slug": "nimbus",
+  "url": "https://www.nimbusnepal.com",
+  "company_count": 11,
+  "llm_cost": {
+    "calls": 1,
+    "input_tokens": 3814,
+    "output_tokens": 1182,
+    "cost_usd": 0.0041
+  },
+  "companies": [
+    {
+      "name": "Byanjan",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "food",
+      "description": "Let's Eat! A food brand offering grocery items, flour, lentils, supplements, nuggets, pickles, poultry feed, pet food, and animal feed.",
+      "image": "http://nimbusnepal.com/storage/images/1566448572.png",
+      "website": "https://nimbusnepal.com/brand/byanjan",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Sunaulo Kiran",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "food",
+      "description": "A food brand offering mustard oil, sunflower oil, soybean oil, and various types of lentils.",
+      "image": "http://nimbusnepal.com/storage/images/1566448791.png",
+      "website": "http://nimbusnepal.com/brand/sunaulo",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Soyabadi",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "food",
+      "description": "A food brand under the Nimbus portfolio.",
+      "image": "http://nimbusnepal.com/storage/images/1566464043.png",
+      "website": "http://nimbusnepal.com/brand/soyabadi",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Adhar",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "food",
+      "description": "A food brand under the Nimbus portfolio.",
+      "image": "http://nimbusnepal.com/storage/images/adharlogo.png",
+      "website": "http://nimbusnepal.com/brand/adhar",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Shakti",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": "An animal nutrition brand offering poultry feed, cattle feed, pig feed, and fish feed.",
+      "image": "http://nimbusnepal.com/storage/images/1566464288.png",
+      "website": "http://nimbusnepal.com/brand/shakti",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Himalayan Happy Pet",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": "An animal nutrition and pet food brand.",
+      "image": "http://nimbusnepal.com/storage/images/1566465004.png",
+      "website": "http://nimbusnepal.com/brand/happypet",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Soymax",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": "An animal nutrition brand under the Nimbus portfolio.",
+      "image": "http://nimbusnepal.com/storage/images/1566465119.png",
+      "website": "http://nimbusnepal.com/brand/soymax",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Pro-Min",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": "An animal nutrition brand under the Nimbus portfolio.",
+      "image": "http://nimbusnepal.com/storage/images/prominlogo.png",
+      "website": "http://nimbusnepal.com/brand/pro-min",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Pro-Vitmin",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": "An animal nutrition brand under the Nimbus portfolio.",
+      "image": "http://nimbusnepal.com/storage/images/1566449196.png",
+      "website": "http://nimbusnepal.com/brand/pro-vitmin",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Nimbus Bazar",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "An online shopping platform associated with Nimbus.",
+      "image": null,
+      "website": "http://nimbusbazar.com/",
+      "source_url": "http://nimbusnepal.com"
+    },
+    {
+      "name": "Nepali Calendar App",
+      "division": "Www.Nimbusnepal.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": "A multi-functional Nepali Calendar App that allows users to view and add events to both Gregorian (A.D.) and Nepali (B.S.) dates in one screen.",
+      "image": null,
+      "website": "https://play.google.com/store/apps/details?id=com.nimbus.nepalicalendar",
+      "source_url": "http://nimbusnepal.com"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Panchakanya Group",
+  "slug": "panchakanya",
+  "url": "https://www.panchakanya.com",
+
+  "discovery": {
+    "__": "Two company sections: 'Manufacturing' (Steel, Plastic, ...) and 'Subsidiaries' (Explore Earthmovers, Paramax, ...). Some subsidiaries link to their own sites — kept as name-only entities, not scraped.",
+    "nav_section": ["Manufacturing", "Subsidiaries"],
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

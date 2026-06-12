@@ -1,0 +1,168 @@
+{
+  "group": "Kedia Organisation",
+  "slug": "kedia",
+  "url": "https://www.kediaorganisation.com",
+  "company_count": 14,
+  "llm_cost": {
+    "calls": 1,
+    "input_tokens": 4162,
+    "output_tokens": 1480,
+    "cost_usd": 0.0049
+  },
+  "companies": [
+    {
+      "name": "Brij Cement",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "cement",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/brij-cement.png",
+      "website": "https://www.brijcement.com",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Arghakhachi Cement",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "cement",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/arghakhachi-cement.png",
+      "website": "https://acplnepal.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Shree Steels",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/shreesteels-logo.png",
+      "website": "https://www.shreesteels.com.np/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Asian Concreto",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/asian-concreto.png",
+      "website": "https://www.asianconcreto.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Brij Safety Glass",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/brij-glass.png",
+      "website": "https://www.brijsafeglass.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Brij Additives",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "other",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/brij-additives.png",
+      "website": "https://www.brijadditives.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Indu Shankar Chini Udyog",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "food",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/indushankar-chini.jpg",
+      "website": null,
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Sitaram Gokul Milk",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "brand",
+      "sector": "food",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/sita-ram-logo.png",
+      "website": null,
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Siddhartha Bank",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "finance",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/siddhartha-bank-logo-200.png",
+      "website": "https://www.siddharthabank.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Siddhartha Premier Insurance",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "insurance",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/siddhartha-premier-insurance.jpeg",
+      "website": "https://siddharthainsurance.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Siddhartha Capital",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "finance",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/siddhartha-capital-200.png",
+      "website": "https://www.siddharthacapital.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Sanima Reliance Life Insurance",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "insurance",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/sanima-reliance-life-insurance.jpeg",
+      "website": "https://relifeinsurance.com/en/home/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Avasar Equity",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "finance",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/avasar-equity.png",
+      "website": "https://avasarequity.com/",
+      "source_url": "http://kediaorganisation.com"
+    },
+    {
+      "name": "Kedia International",
+      "division": "Www.Kediaorganisation.Com",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": "https://www.kediaorganisation.com/wp-content/themes/kedia_thm/assets/images/kedia/kedia-international.jpg",
+      "website": null,
+      "source_url": "http://kediaorganisation.com"
+    }
+  ]
+}

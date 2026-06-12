@@ -35,17 +35,49 @@ def discover_pages(config, cache):
     nav = (scraper.resource(config["url"], cache).get("data") or {}).get("nav") or []
 
     pages, seen = [], set()
-    want = (disc.get("nav_section") or "").lower()
     for item in nav:
-        if want and want in (item.get("title") or "").lower():
-            for ch in (item.get("children") or []):
-                u, t = ch.get("url"), (ch.get("title") or "").strip()
-                if (u and u.startswith("http") and nkey(u) not in seen
-                        and (not disc.get("same_domain_only") or domain_of(u) == home)
-                        and not any(j in t.lower() for j in JUNK_CHILD)):
-                    seen.add(nkey(u))
-                    pages.append({"url": u, "section": t})
+        if not _section_matches(item.get("title"), disc.get("nav_section")):
+            continue
+        for ch in (item.get("children") or []):
+            u, t = ch.get("url"), (ch.get("title") or "").strip()
+            if (u and u.startswith("http") and nkey(u) not in seen
+                    and (not disc.get("same_domain_only") or domain_of(u) == home)
+                    and not any(j in t.lower() for j in JUNK_CHILD)):
+                seen.add(nkey(u))
+                pages.append({"url": u, "section": t})
     return pages
+
+
+def _section_matches(title, nav_section):
+    """nav_section may be a string or a list of section titles."""
+    if not nav_section:
+        return False
+    wants = [nav_section] if isinstance(nav_section, str) else nav_section
+    t = (title or "").lower()
+    return any(w.lower() in t for w in wants)
+
+
+def nav_company_entities(config, cache):
+    """Company-section nav children that link to a company's OWN (external) site
+    are real subsidiaries — keep them as name-only entities WITHOUT scraping
+    (their site would add product noise). e.g. Panchakanya's Paramax / Explore."""
+    disc = config.get("discovery", {})
+    if not disc.get("nav_section"):
+        return []
+    home = domain_of(config["url"])
+    nav = (scraper.resource(config["url"], cache).get("data") or {}).get("nav") or []
+    out = []
+    for item in nav:
+        title = (item.get("title") or "").strip()
+        if not _section_matches(title, disc.get("nav_section")):
+            continue
+        for ch in (item.get("children") or []):
+            u, t = ch.get("url"), (ch.get("title") or "").strip()
+            if (u and u.startswith("http") and domain_of(u) != home and t
+                    and not any(j in t.lower() for j in JUNK_CHILD)):
+                out.append({"name": t, "division": title, "relationship": "subsidiary",
+                            "website": u, "source_url": config["url"]})
+    return out
 
 
 def discover_detail_pages(pages_by_url, section_of, home, config):
@@ -100,7 +132,9 @@ def drop_noise(companies, config):
 def structural_keys(config, cache):
     """Fuzzy-keys of the group's own nav/footer link titles (CG Motors, About,
     CG Mansion...). These echo in every page's footer; on a thin page the LLM
-    extracts them as fake companies."""
+    extracts them as fake companies. Real external subsidiaries linked from a
+    company nav section (Kedia's Siddhartha Bank) are excluded — they ARE
+    companies, not navigation chrome."""
     keys = set()
     data = (scraper.resource(config["url"], cache).get("data") or {})
 
@@ -113,19 +147,34 @@ def structural_keys(config, cache):
 
     walk(data.get("nav"))
     walk(data.get("footer"))
+    for e in nav_company_entities(config, cache):
+        keys.discard(fuzzy_key(e["name"]))
     return keys
 
 
-def drop_structural_echoes(companies, struct_keys):
-    """Drop an entity that matches a nav/footer structural name, UNLESS it is
-    the anchor of its own page (its name == its division — e.g. 'CG Foods' on
-    the CG Foods page is kept; 'CG Infra' echoed on the energy-drink page is not)."""
+def drop_structural_echoes(companies, struct_keys, heads_by_url, home_url):
+    """Drop an entity whose name matches a nav/footer structural name — these are
+    footer/nav chrome that a thin subsidiary page makes the LLM extract as a fake
+    company ('CG Infra' echoed on the energy-drink page).
+
+    An entity is kept when it is genuine content rather than chrome, signalled by
+    any of:
+      - it is the anchor of its own page          (name == division)
+      - it was scraped from the group landing page (the homepage IS the brand
+        listing — e.g. Kedia's 'Brij Cement' grid card, where the same names also
+        live in the nav 'Our Brands')
+      - it appears as a heading on its source page (a grid card / section title,
+        not merely a footer link)."""
+    home = nkey(home_url)
     out = []
     for c in companies:
         nk = fuzzy_key(c["name"])
         own = fuzzy_key(c.get("division") or "")
-        if nk in struct_keys and nk != own:
-            continue
+        src = nkey(c.get("source_url"))
+        if nk in struct_keys and nk != own and src != home:
+            heads = {fuzzy_key(h) for h in heads_by_url.get(src, set())}
+            if not any(nk == hk or nk in hk or hk in nk for hk in heads):
+                continue
         out.append(c)
     return out
 
@@ -135,6 +184,8 @@ def apply_division(companies, section_of, title_of):
     Use the section label if readable; fall back to the page title when the
     section is an opaque URL slug (numeric / page_id, e.g. Laxmi)."""
     for c in companies:
+        if c.get("division"):       # preserve divisions set by nav_company_entities
+            continue
         k = nkey(c.get("source_url"))
         sec = (section_of.get(k, "") or "").split("/")[0]
         div = clean_division_name(sec)
@@ -217,6 +268,7 @@ def run_group(config, gemini, cache):
                 c.setdefault("source_url", url)
         companies.extend(c for c in got if isinstance(c, dict))
 
+    companies.extend(nav_company_entities(config, cache))  # external subsidiaries (name-only)
     companies = apply_division(companies, section_of, title_of)
 
     before = len(companies)
@@ -224,7 +276,8 @@ def run_group(config, gemini, cache):
         companies = keep_only_headings(companies, heads_by_url)
         print(f"  heading-rule: {before} -> {len(companies)} (dropped non-heading)")
 
-    companies = drop_structural_echoes(companies, structural_keys(config, cache))
+    companies = drop_structural_echoes(companies, structural_keys(config, cache),
+                                       heads_by_url, config["url"])
     companies = drop_noise(companies, config)
     companies = dedup(companies)
     companies = resolve_parents(companies, config)

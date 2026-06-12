@@ -1,0 +1,26 @@
+{
+  "name": "KC Group",
+  "slug": "kc",
+  "url": "https://kcgroupnepal.com",
+
+  "discovery": {
+    "__": "The 'Sectors' nav is a flat link; each sector's companies live on its /portfolio/<sector>/ page (JS-rendered, browser fallback handles it). Listed explicitly.",
+    "pages": [
+      "https://kcgroupnepal.com/portfolio/banking-and-financial-sector/",
+      "https://kcgroupnepal.com/portfolio/construction-sector/",
+      "https://kcgroupnepal.com/portfolio/fmcg-sector/",
+      "https://kcgroupnepal.com/portfolio/hydropower-sector/",
+      "https://kcgroupnepal.com/portfolio/real-estate/"
+    ],
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

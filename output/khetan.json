@@ -1,0 +1,58 @@
+{
+  "group": "Khetan Group",
+  "slug": "khetan",
+  "url": "https://www.khetangroup.net",
+  "company_count": 4,
+  "llm_cost": {
+    "calls": 4,
+    "input_tokens": 3037,
+    "output_tokens": 701,
+    "cost_usd": 0.0027
+  },
+  "companies": [
+    {
+      "name": "Khetan Udyog",
+      "division": "Khetan Udyog",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Khetan Udyog is continuously engaged in making world class Telescopic Channel, Auto Hinges and other hardware products. Our workplace is modem and organized, equipped with sophisticated machinery. In our attempts to deliver the best, we have brilliantly carved out our identity in eminent manufacturing market.",
+      "image": "https://www.khetangroup.net/wp-content/uploads/2022/02/udyog-banner.jpg.webp",
+      "website": null,
+      "source_url": "http://khetangroup.net/khetan-udyog"
+    },
+    {
+      "name": "Khetan Viniyog Pvt. Ltd.",
+      "division": "Khetan Viniyog Pvt. Ltd.",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Khetan Viniyog Pvt. Ltd. Welcome you to the flourishing world of stainless steel pipe. Khetan is proud to be the largest stainless steel railing manufacturers in Jharkhand and Bihar. Khetan group is engaged in manufacturing, supplying & exporting of different product group",
+      "image": "https://www.khetangroup.net/wp-content/uploads/2022/02/viniyog-banner.jpg.webp",
+      "website": null,
+      "source_url": "http://khetangroup.net/khetan-viniyog-pvt-ltd"
+    },
+    {
+      "name": "Khetan Enterprises",
+      "division": "Khetan Enterprises",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Khetan Enterprises is engaged in manufacturing, sourcing and selling of Silica Ramming Mass, Tundish Board, Casting Powder, Nozzle Filling Compound (NFC) & Radex in India as well as international market. It has attained an invincible position in the market of Steel Melting Refractories. The organization has more than 40 years of experience in the industry and follows the motto of 'Quality First'.",
+      "image": "https://www.khetangroup.net/wp-content/uploads/2022/02/enterprises-banner.jpg.webp",
+      "website": null,
+      "source_url": "http://khetangroup.net/khetan-enterprises"
+    },
+    {
+      "name": "Khetan Ajinkya",
+      "division": "Khetan Ajinkya",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Khetan Ajinkya provides a diverse range of high-quality aluminum sections for construction and industrial applications, including framing for doors, windows, furniture, fencing panels, and specialized solar panel mounts. Backed by advanced extrusion and processing facilities, Khetan Ajinkya ensures precise aluminum production with automated pressing, anodizing, powder coating, and sand blasting. The company also offers stainless steel pipes, ideal for architectural and mechanical fittings, and provides various protective packaging options to ensure product integrity during transit.",
+      "image": "https://www.khetangroup.net/wp-content/uploads/2024/11/Khetan-Ajinkya.png.webp",
+      "website": null,
+      "source_url": "http://khetangroup.net/khetan-ajinkya"
+    }
+  ]
+}

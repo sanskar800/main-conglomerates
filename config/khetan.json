@@ -1,0 +1,20 @@
+{
+  "name": "Khetan Group",
+  "slug": "khetan",
+  "url": "https://www.khetangroup.net",
+
+  "discovery": {
+    "__": "The 'Companies' nav section lists the 4 companies: Khetan Udyog, Khetan Viniyog, Khetan Enterprises, Khetan Ajinkya. (The Products/Quality sections are ignored.)",
+    "nav_section": "Companies",
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

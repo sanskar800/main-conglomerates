@@ -2,7 +2,7 @@
   "group": "Chaudhary Group (CG)",
   "slug": "cg",
   "url": "https://chaudharygroup.com",
-  "company_count": 95,
+  "company_count": 96,
   "llm_cost": {
     "calls": 22,
     "input_tokens": 21165,
@@ -462,9 +462,20 @@
       "source_url": "http://chaudharygroup.com/foods"
     },
     {
-      "name": "Rio",
+      "name": "CG Beverage",
       "division": "CG Foods",
       "parent": null,
+      "relationship": "subsidiary",
+      "sector": "beverage",
+      "description": "CG Beverage was established in 1998 for the production of fruit based drinks under the brand RIO and is fast emerging as one of the preferred brands of consumers. It now produces more than 100 million packets a year and produces popular flavors like Alfonso Mango, Mixed Fruit, Apple and Pineapple.",
+      "image": "http://chaudharygroup.com/img/cgFoods/cgbeverage1-34168938.webp",
+      "website": null,
+      "source_url": "http://chaudharygroup.com/foods"
+    },
+    {
+      "name": "Rio",
+      "division": "CG Foods",
+      "parent": "CG Beverage",
       "relationship": "brand",
       "sector": "beverage",
       "description": "It now produces more than 100 million packets a year and produces popular flavors like Alfonso Mango, Mixed Fruit, Apple and Pineapple under its brand name Rio.",
@@ -475,7 +486,7 @@
     {
       "name": "Jucilo",
       "division": "CG Foods",
-      "parent": null,
+      "parent": "CG Beverage",
       "relationship": "brand",
       "sector": "beverage",
       "description": "As an extension of the Rio brand a sub-category brand “Jucilo” targeting youth has been launched in 2 flavours Mango and litchi.",

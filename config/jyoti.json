@@ -1,0 +1,20 @@
+{
+  "name": "Jyoti Group",
+  "slug": "jyoti",
+  "url": "https://www.jyotigroup.org.np",
+
+  "discovery": {
+    "__": "The 'COMPANIES' nav section lists the sectors: Trading, Industry, Services, Investments.",
+    "nav_section": "Companies",
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

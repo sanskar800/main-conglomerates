@@ -1,0 +1,20 @@
+{
+  "name": "Nimbus Group",
+  "slug": "nimbus",
+  "url": "https://www.nimbusnepal.com",
+
+  "discovery": {
+    "__": "No company/business nav section (only Products). The group's brands are listed on the homepage; scrape it as the landing page.",
+    "pages": ["https://www.nimbusnepal.com"],
+    "follow_read_more": false,
+    "same_domain_only": true
+  },
+
+  "rules": {
+    "name_must_be_heading": false,
+    "division_from": "page",
+    "nest_brand_under_company_only": true,
+    "drop_if_contains": ["region", "main unit", "head office"],
+    "min_name_length": 3
+  }
+}

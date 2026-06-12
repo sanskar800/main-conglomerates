@@ -1,0 +1,234 @@
+{
+  "group": "Jyoti Group",
+  "slug": "jyoti",
+  "url": "https://www.jyotigroup.org.np",
+  "company_count": 20,
+  "llm_cost": {
+    "calls": 4,
+    "input_tokens": 3418,
+    "output_tokens": 1992,
+    "cost_usd": 0.006
+  },
+  "companies": [
+    {
+      "name": "Bhajuratna Engineering & Sales Ltd",
+      "division": "Trading",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/bhajuratna-engineering-sales-ltd/",
+      "source_url": "http://jyotigroup.org.np/trading"
+    },
+    {
+      "name": "Syakar Company (P) Ltd",
+      "division": "Trading",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "automotive",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/syakar-company-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/trading"
+    },
+    {
+      "name": "Bhajuratna Pharma (P) Ltd",
+      "division": "Trading",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/bhajuratna-pharma-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/trading"
+    },
+    {
+      "name": "Nepal General Marketing (P) Ltd",
+      "division": "Trading",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/nepal-general-marketing-p-ltd-ngm/",
+      "source_url": "http://jyotigroup.org.np/trading"
+    },
+    {
+      "name": "Syamukapu Trading (P) Ltd",
+      "division": "Trading",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/syamukapu-trading-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/trading"
+    },
+    {
+      "name": "Syamukapu International",
+      "division": "Trading",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/syamukapu-international-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/trading"
+    },
+    {
+      "name": "Himal Iron and Steel (P) Ltd",
+      "division": "Industry",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "The first Nepalese iron and steel factory built in the jungles of Parwanipur, Parsa to lead Nepal into self sufficiency and to accelerate Nepal’s infrastructure growth.",
+      "image": "https://www.jyotigroup.org.np/wp-content/uploads/2023/07/image11.png",
+      "website": "https://www.jyotigroup.org.np/himal-iron-steel-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/industry"
+    },
+    {
+      "name": "Himal Wires (P) Ltd",
+      "division": "Industry",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Located in Parwanipur, this company is part of the industrial hub established by the group to support infrastructure growth.",
+      "image": "https://www.jyotigroup.org.np/wp-content/uploads/2023/07/image11.png",
+      "website": "https://www.jyotigroup.org.np/himal-wires-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/industry"
+    },
+    {
+      "name": "Himal Oxygen (P) Ltd",
+      "division": "Industry",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Located in Parwanipur, this company is part of the industrial hub established by the group to support infrastructure growth.",
+      "image": "https://www.jyotigroup.org.np/wp-content/uploads/2023/07/image11.png",
+      "website": "https://www.jyotigroup.org.np/himal-oxygen-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/industry"
+    },
+    {
+      "name": "Jay Spinning Mills (P) Ltd",
+      "division": "Industry",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Located in Parwanipur, this company is part of the industrial hub established by the group to support infrastructure growth.",
+      "image": "https://www.jyotigroup.org.np/wp-content/uploads/2023/07/image11.png",
+      "website": "https://www.jyotigroup.org.np/jay-spinning-mills-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/industry"
+    },
+    {
+      "name": "Jyoti Yarn Processing (P) Ltd",
+      "division": "Industry",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Located in Parwanipur, this company is part of the industrial hub established by the group to support infrastructure growth.",
+      "image": "https://www.jyotigroup.org.np/wp-content/uploads/2023/07/image11.png",
+      "website": "https://www.jyotigroup.org.np/jyoti-yarn-processing-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/industry"
+    },
+    {
+      "name": "Jyoti Farm",
+      "division": "Industry",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Located in Parwanipur, this entity is part of the industrial hub established by the group.",
+      "image": "https://www.jyotigroup.org.np/wp-content/uploads/2023/07/image11.png",
+      "website": null,
+      "source_url": "http://jyotigroup.org.np/industry"
+    },
+    {
+      "name": "NGM Engineering & Sales",
+      "division": "Industry",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/ngm-engineering-sales-p-ltd/",
+      "source_url": "http://jyotigroup.org.np/industry"
+    },
+    {
+      "name": "Himal Agencies",
+      "division": "Services",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": "Offering clear, forwarding and transportation from Kolkata Port to different locations in Nepal.",
+      "image": null,
+      "website": null,
+      "source_url": "http://jyotigroup.org.np/services"
+    },
+    {
+      "name": "Grande City Hospital",
+      "division": "Services",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/grande-city-hospital/",
+      "source_url": "http://jyotigroup.org.np/services"
+    },
+    {
+      "name": "Suruchi Travel & Tours",
+      "division": "Services",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://www.jyotigroup.org.np/suruchi-travel-and-tours/",
+      "source_url": "http://jyotigroup.org.np/services"
+    },
+    {
+      "name": "Grande International Hospital",
+      "division": "Investments",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "other",
+      "description": null,
+      "image": null,
+      "website": "https://grandehospital.com/",
+      "source_url": "http://jyotigroup.org.np/investments"
+    },
+    {
+      "name": "Lumbini Bikas Bank",
+      "division": "Investments",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "finance",
+      "description": null,
+      "image": null,
+      "website": "https://www.lumbinibikasbank.com/",
+      "source_url": "http://jyotigroup.org.np/investments"
+    },
+    {
+      "name": "Sagarmatha Lumbini Insurance",
+      "division": "Investments",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "insurance",
+      "description": null,
+      "image": null,
+      "website": "https://salico.com.np/",
+      "source_url": "http://jyotigroup.org.np/investments"
+    },
+    {
+      "name": "Butwal Power Company",
+      "division": "Investments",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "energy",
+      "description": null,
+      "image": null,
+      "website": "https://www.bpc.com.np/",
+      "source_url": "http://jyotigroup.org.np/investments"
+    }
+  ]
+}

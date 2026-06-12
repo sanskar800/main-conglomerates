@@ -1,0 +1,47 @@
+{
+  "group": "KC Group",
+  "slug": "kc",
+  "url": "https://kcgroupnepal.com",
+  "company_count": 3,
+  "llm_cost": {
+    "calls": 5,
+    "input_tokens": 3765,
+    "output_tokens": 366,
+    "cost_usd": 0.002
+  },
+  "companies": [
+    {
+      "name": "Machhapuchchhre Bank Limited",
+      "division": "Banking And Financial Sector",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "finance",
+      "description": "Registered in 1998, MBL became the first regional commercial bank from this region and officially began operations in 2000 from its head office in Pokhara, located at the foothills of the majestic Mount Machhapuchchhre. As an ‘A’ class commercial bank, MBL provides a comprehensive range of financial services including Internet Banking, SMS Banking, Remittance, Visa Debit Cards, Mobile Money, Locker Facilities, and more.",
+      "image": null,
+      "website": null,
+      "source_url": "http://kcgroupnepal.com/portfolio/banking-and-financial-sector"
+    },
+    {
+      "name": "Sun Nepal Life Insurance",
+      "division": "Banking And Financial Sector",
+      "parent": null,
+      "relationship": "investment",
+      "sector": "insurance",
+      "description": "A newly established company that aims to provide innovative and accessible life insurance solutions. Despite being new, Sun Nepal Life is making steady progress with a focus on digital transformation, customer trust, and long-term protection plans.",
+      "image": null,
+      "website": null,
+      "source_url": "http://kcgroupnepal.com/portfolio/banking-and-financial-sector"
+    },
+    {
+      "name": "KC Construction",
+      "division": "Fmcg Sector",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "real_estate",
+      "description": "A construction and real estate arm of the KC Group of Companies, which is a multi-industry conglomerate with a strong and growing presence in various sectors.",
+      "image": null,
+      "website": null,
+      "source_url": "http://kcgroupnepal.com/portfolio/fmcg-sector"
+    }
+  ]
+}

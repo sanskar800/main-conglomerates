@@ -2,7 +2,7 @@
   "group": "KL Dugar Group",
   "slug": "kldugar",
   "url": "https://www.kldugargroup.com",
-  "company_count": 34,
+  "company_count": 35,
   "llm_cost": {
     "calls": 13,
     "input_tokens": 19226,
@@ -350,6 +350,17 @@
       "image": "http://kldugargroup.com/wp-content/uploads/2024/03/The-Baha.jpg",
       "website": null,
       "source_url": "http://kldugargroup.com/business/skyline-developers-pvt-ltd"
+    },
+    {
+      "name": "K.J Properties & Builders Pvt. Ltd.",
+      "division": "K.J Properties & Builder’s",
+      "parent": null,
+      "relationship": "subsidiary",
+      "sector": "real_estate",
+      "description": "Placed in the heart of Kathmandu city, amidst the lush greens of Sanogaucharan, these high-rise luxury apartments are the epitome of KL Dugar’s legacy of pursuing excellence. With a long-term goal to urbanise Nepal on the foundation of contemporary architecture, the iconic KL Residency Luxury Homes was conceptualised and has grown to become a ‘dream homes come true’.",
+      "image": "http://kldugargroup.com/wp-content/uploads/2022/09/realstate-new-1.jpg",
+      "website": null,
+      "source_url": "http://kldugargroup.com/business/k-j-properties-builders-pvt-ltd"
     },
     {
       "name": "K L Residency",
